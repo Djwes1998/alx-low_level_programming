@@ -6,26 +6,25 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int main()
 {
-	int digit1, digit2;
+    int i, j;
 
-	for (digit1 = 0; digit1 < 10; digit1++)
+    for (i = 0; i <= 8; i++)
+    {
+        for (j = i + 1; j <= 9; j++)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
-		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
+            putchar(i + '0');
+            putchar(j + '0');
+            if (!(i == 8 && j == 9))
+	    {
+                putchar(',');
+                putchar(' ');
+            }
+        }
+    }
 
-			if (digit1 == 9 && digit2 == 9)
-				continue;
-			
-			putchar(',');
-			putchar(' ');
-		}
-	}
+    putchar('\n');
 
-	putchar('\n');
-
-	return (0);
+    return 0;
 }
