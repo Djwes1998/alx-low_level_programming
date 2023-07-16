@@ -9,7 +9,7 @@ int main()
 {
     char letter;
     
-    for (letter = 'a'; letter <= 'z'; letter++) 
+   for (letter = 'a'; letter <= 'z'; letter++) 
     {
         if (letter != 'q' && letter != 'e')
        	{
@@ -20,4 +20,3 @@ int main()
     
     return 0;
 }
-
