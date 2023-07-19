@@ -1,18 +1,11 @@
-#include "main.h"
+#ifndef ALPHABET
+#define ALPHABET
+#include <std.h>
 
-/**
-  * print_alphabet - Make the alphabet
-  *
-  * Return: void
-  */
-void print_alphabet(void)
-{
-        char c;
-
-        for (c = 'a'; c <= 'z'; c++)
-        {
-                _putchar(c);
-        }
-
-        _putchar('\n');
-}
+/*
+ * Main prototype
+ */
+int _putchar(char c)
+int print_alphabet(void)
+int print_alphabet_x10(void)	
+#endif	
