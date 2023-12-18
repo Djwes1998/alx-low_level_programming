@@ -1,5 +1,3 @@
-                   0x15. C - File I/O
-
 0. Write a function that reads a text file and prints it to the POSIX standard output.
 
 Prototype: ssize_t read_textfile(const char *filename, size_t letters);
@@ -9,7 +7,7 @@ if the file can not be opened or read, return 0
 if filename is NULL return 0
 if write fails or does not write the expected amount of bytes, return 0
 
-1. Create a function that creates a file.
+1.  Create a function that creates a file.
 
 Prototype: int create_file(const char *filename, char *text_content);
 where filename is the name of the file to create and text_content is a NULL terminated string to write to the file
@@ -19,7 +17,7 @@ if the file already exists, truncate it
 if filename is NULL return -1
 if text_content is NULL create an empty file
 
-2. Write a function that appends text at the end of a file.
+2.  Write a function that appends text at the end of a file.
 
 Prototype: int append_text_to_file(const char *filename, char *text_content);
 where filename is the name of the file and text_content is the NULL terminated string to add at the end of the file
@@ -28,7 +26,7 @@ Do not create the file if it does not exist
 If filename is NULL return -1
 If text_content is NULL, do not add anything to the file. Return 1 if the file exists and -1 if the file does not exist or if you do not have the required permissions to write the file
 
-3. Write a program that copies the content of a file to another file.
+3.  Write a program that copies the content of a file to another file.
 
 Usage: cp file_from file_to
 if the number of argument is not the correct one, exit with code 97 and print Usage: cp file_from file_to, followed by a new line, on the POSIX standard error
